@@ -12,7 +12,7 @@ import time
 
 
 class WhisperMic:
-    def __init__(self,model="base",device=("cuda" if torch.cuda.is_available() else "cpu"),english=False,verbose=False,energy=300,pause=0.8,dynamic_energy=False,save_file=False):
+    def __init__(self,model="medium",device=("cuda" if torch.cuda.is_available() else "cpu"),english=False,verbose=False,energy=300,pause=0.8,dynamic_energy=False,save_file=False):
         self.energy = energy
         self.pause = pause
         self.dynamic_energy = dynamic_energy
